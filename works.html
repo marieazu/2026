@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works — AZU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">AZU</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html" class="active">Works</a></li>
+    </ul>
+  </nav>
+
+  <header class="works-header">
+    <h1 id="project-title">Project</h1>
+    <p class="subtitle" id="project-subtitle">Product &amp; UI Design</p>
+  </header>
+
+  <section class="work-detail">
+    <dl class="work-meta">
+      <div>
+        <dt>Client</dt>
+        <dd id="meta-client">—</dd>
+      </div>
+      <div>
+        <dt>Role</dt>
+        <dd>Product / UI Design</dd>
+      </div>
+      <div>
+        <dt>Year</dt>
+        <dd>2026</dd>
+      </div>
+    </dl>
+
+    <p class="work-description" id="work-description">
+      A comprehensive design project encompassing product strategy, user interface
+      design, and visual identity. Focused on delivering a seamless user experience
+      through thoughtful design decisions and meticulous attention to detail.
+    </p>
+
+    <div class="work-gallery">
+      <div class="placeholder-img"></div>
+      <div class="placeholder-img"></div>
+      <div class="placeholder-img"></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 AZU — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+  <script>
+    const projects = {
+      syky:      { title: 'SYKY',      subtitle: 'Digital Fashion Platform' },
+      coach:     { title: 'Coach',     subtitle: 'Brand Experience Design' },
+      burberry:  { title: 'Burberry',  subtitle: 'Product & UI Design' },
+      bswhealth: { title: 'BSWHealth', subtitle: 'Healthcare UX Design' },
+      ford:      { title: 'Ford',      subtitle: 'Automotive Digital Experience' }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get('project');
+    if (key && projects[key]) {
+      const p = projects[key];
+      document.getElementById('project-title').textContent = p.title;
+      document.getElementById('project-subtitle').textContent = p.subtitle;
+      document.getElementById('meta-client').textContent = p.title;
+      document.title = p.title + ' — AZU';
+    }
+  </script>
+
+</body>
+</html>
