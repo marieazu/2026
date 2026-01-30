@@ -192,6 +192,11 @@ label {
   text-decoration: none;
   color: inherit;
   line-height: 28px;
+  transition: color 0.3s;
+}
+
+.sticky-nav a:hover {
+  color: #2339FF;
 }
 
 /* ---- COVER ---- */
@@ -318,6 +323,11 @@ label {
 .project-subtitle {
   margin-top: 0.25rem;
   color: var(--gray);
+  transition: color 0.3s;
+}
+
+.project-item:hover .project-subtitle {
+  color: #2339FF;
 }
 
 /* ---- ABOUT ---- */
