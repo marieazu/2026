@@ -141,26 +141,26 @@ label {
 
 /* ---- STICKY BRAND ---- */
 .sticky-brand {
-  position: relative;
-  z-index: 100;
-  padding: 1.5rem 2.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-}
-
-.sticky-brand.is-sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+  padding: 1.5rem 2.5rem 24px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.sticky-brand.is-visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sticky-brand-placeholder {
   display: none;
-}
-
-.sticky-brand-placeholder.is-active {
-  display: block;
 }
 
 .sticky-brand .brand {
@@ -298,10 +298,14 @@ label {
 /* ---- ABOUT ---- */
 .about {
   padding: 0 2.5rem 80px;
-  max-width: 720px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.about-content {
+  width: 600px;
+  max-width: 100%;
 }
 
 .about .greeting {

@@ -94,21 +94,19 @@
   <script>
     (function() {
       const brand = document.getElementById('sticky-brand');
-      const placeholder = document.getElementById('sticky-brand-placeholder');
-      const brandTop = brand.offsetTop;
+      const projects = document.getElementById('projects');
 
       function onScroll() {
-        if (window.scrollY >= brandTop) {
-          brand.classList.add('is-sticky');
-          placeholder.style.height = brand.offsetHeight + 'px';
-          placeholder.classList.add('is-active');
+        const projectsTop = projects.getBoundingClientRect().top;
+        if (projectsTop <= window.innerHeight) {
+          brand.classList.add('is-visible');
         } else {
-          brand.classList.remove('is-sticky');
-          placeholder.classList.remove('is-active');
+          brand.classList.remove('is-visible');
         }
       }
 
       window.addEventListener('scroll', onScroll);
+      onScroll();
     })();
   </script>
 </body>
