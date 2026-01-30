@@ -275,7 +275,7 @@ label {
 .project-item {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 24px 0;
   border-top: 1px solid var(--black);
   transition: color 0.3s;
 }
