@@ -180,6 +180,32 @@ nav ul a.active::after {
   background: var(--black);
 }
 
+/* ---- SECTION NAV ---- */
+.section-nav {
+  position: static;
+  background: none;
+  backdrop-filter: none;
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.section-nav ul a {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s;
+}
+
+.section-nav ul a:hover {
+  opacity: 0.5;
+}
+
 /* ---- COVER ---- */
 .cover {
   min-height: 100vh;
@@ -236,14 +262,6 @@ nav ul a.active::after {
   padding: 6rem 2.5rem;
 }
 
-.projects .section-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 3rem;
-}
-
 .project-list {
   display: flex;
   flex-direction: column;
@@ -267,10 +285,12 @@ nav ul a.active::after {
 }
 
 .project-item .project-name {
-  font-size: clamp(1.5rem, 4vw, 3rem);
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .project-item .arrow {
@@ -286,14 +306,6 @@ nav ul a.active::after {
 .about {
   padding: 6rem 2.5rem;
   max-width: 720px;
-}
-
-.about .section-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 3rem;
 }
 
 .about .greeting {
@@ -400,6 +412,10 @@ footer {
     padding: 5rem 1.5rem 3rem;
   }
 
+  .section-nav {
+    padding: 1.5rem 1.5rem;
+  }
+
   .projects {
     padding: 4rem 1.5rem;
   }
@@ -426,6 +442,6 @@ footer {
 
 @media (max-width: 480px) {
   .project-item .project-name {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 }
