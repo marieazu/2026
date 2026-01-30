@@ -152,6 +152,9 @@ label {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .sticky-brand.is-visible {
@@ -168,6 +171,21 @@ label {
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  line-height: 28px;
+}
+
+.sticky-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sticky-nav a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
   line-height: 28px;
 }
 
