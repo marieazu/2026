@@ -16,6 +16,8 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 body {
@@ -39,6 +41,12 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* ---- PAGE SECTIONS (snap) ---- */
+.page-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
 }
 
 /* ---- TYPOGRAPHY ---- */
@@ -163,31 +171,6 @@ label {
   line-height: 28px;
 }
 
-/* ---- SECTION NAV ---- */
-.section-nav {
-  position: static;
-  background: none;
-  backdrop-filter: none;
-  padding: 2rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.section-nav ul {
-  list-style: none;
-}
-
-.section-nav ul a {
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
-  transition: color 0.3s;
-}
-
-.section-nav ul a:hover {
-  color: #2339FF;
-}
-
 /* ---- COVER ---- */
 .cover {
   min-height: 100vh;
@@ -197,6 +180,15 @@ label {
   align-items: flex-start;
   text-align: left;
   padding: 6rem 2.5rem 4rem;
+  position: relative;
+}
+
+.cover-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .cover .brand-line {
@@ -236,27 +228,53 @@ label {
   max-width: 100%;
 }
 
+/* ---- SECTION NAV (inside cover) ---- */
+.section-nav {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-nav ul {
+  list-style: none;
+}
+
+.section-nav ul a {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s;
+}
+
+.section-nav ul a:hover {
+  color: #2339FF;
+}
+
 /* ---- PROJECTS ---- */
 .projects {
-  padding: 6rem 2.5rem;
+  padding: 0 2.5rem 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .project-list {
   display: flex;
   flex-direction: column;
+  width: 600px;
+  max-width: 100%;
 }
 
 .project-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid var(--black);
   transition: color 0.3s;
 }
 
 .project-item:last-child {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--black);
 }
 
 .project-item:hover {
@@ -272,19 +290,18 @@ label {
   margin: 0;
 }
 
-.project-item .arrow {
-  font-size: 1.5rem;
-  transition: transform 0.3s;
-}
-
-.project-item:hover .arrow {
-  transform: translateX(8px);
+.project-subtitle {
+  margin-top: 0.25rem;
+  color: var(--gray);
 }
 
 /* ---- ABOUT ---- */
 .about {
-  padding: 6rem 2.5rem;
+  padding: 0 2.5rem 80px;
   max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .about .greeting {
@@ -321,7 +338,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #e0e0e0;
   font-size: 0.75rem;
   color: var(--gray);
   letter-spacing: 0.05em;
@@ -402,16 +418,12 @@ footer {
     padding: 5rem 1.5rem 3rem;
   }
 
-  .section-nav {
-    padding: 1.5rem 1.5rem;
-  }
-
   .projects {
-    padding: 4rem 1.5rem;
+    padding: 0 1.5rem 80px;
   }
 
   .about {
-    padding: 4rem 1.5rem;
+    padding: 0 1.5rem 80px;
   }
 
   .works-header {
