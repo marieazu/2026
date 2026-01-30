@@ -99,7 +99,7 @@
 
       function onScroll() {
         const projectsTop = projects.getBoundingClientRect().top;
-        if (projectsTop <= window.innerHeight) {
+        if (projectsTop <= 0) {
           brand.classList.add('is-visible');
         } else {
           brand.classList.remove('is-visible');
