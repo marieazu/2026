@@ -89,9 +89,9 @@ nav ul a.active::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 6rem 2rem 4rem;
+  align-items: flex-start;
+  text-align: left;
+  padding: 6rem 2.5rem 4rem;
 }
 
 .cover .brand {
@@ -102,12 +102,17 @@ nav ul a.active::after {
   line-height: 1;
 }
 
+.cover .brand-line {
+  width: 60px;
+  height: 6px;
+  background: var(--black);
+  margin: 1.5rem 0;
+}
+
 .cover .name {
   font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 400;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
-  margin-top: 1.5rem;
   color: var(--gray);
 }
 
@@ -125,7 +130,7 @@ nav ul a.active::after {
   text-transform: uppercase;
   margin-top: 3rem;
   color: var(--gray);
-  border-top: 1px solid #ddd;
+  border-top: 2px solid var(--black);
   padding-top: 1.5rem;
 }
 
