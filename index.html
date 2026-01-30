@@ -9,9 +9,10 @@
 <body>
 
   <!-- Sticky Brand -->
-  <div class="sticky-brand">
+  <div class="sticky-brand" id="sticky-brand">
     <h1 class="brand">AZÜ</h1>
   </div>
+  <div class="sticky-brand-placeholder" id="sticky-brand-placeholder"></div>
 
   <!-- Cover -->
   <section class="cover">
@@ -59,13 +60,19 @@
 
   <!-- About -->
   <section class="about" id="about">
-    <h1 class="greeting">Hello</h1>
+    <h1 class="greeting">Hello.</h1>
     <p class="bio">
-      My name is Marie Ansart. I'm a Senior Product and UI Designer focused on
-      crafting thoughtful digital experiences. With a passion for clean aesthetics
-      and functional design, I help brands communicate their vision through
-      carefully considered interfaces and visual systems.
+      I'm Marie, a French-Japanese product designer currently based in London. With more than 12 years of experience in the field, I have consistently leveraged results from user testing and analytics to deliver polished designs with exceptional user experiences.
     </p>
+    <p class="bio">
+      I speak three languages and love travel, art, and culture, which fuel my creativity and inspire fresh perspectives. I am driven by the opportunity to produce world-class work with efficiency, and I thrive in collaborative environments where I can align with other disciplines to achieve shared objectives.
+    </p>
+    <p class="bio">
+      In my spare time I kill plants. I also love cats… apparently more than what seems healthy.
+    </p>
+    <h3 class="about-links">
+      <a href="mailto:hello@azu.design">Email</a> • <a href="https://linkedin.com" target="_blank">LinkedIn</a> • <a href="https://instagram.com" target="_blank">Instagram</a>
+    </h3>
   </section>
 
   <footer>
@@ -73,5 +80,25 @@
     <span>Senior Product / UI Designer</span>
   </footer>
 
+  <script>
+    (function() {
+      const brand = document.getElementById('sticky-brand');
+      const placeholder = document.getElementById('sticky-brand-placeholder');
+      const brandTop = brand.offsetTop;
+
+      function onScroll() {
+        if (window.scrollY >= brandTop) {
+          brand.classList.add('is-sticky');
+          placeholder.style.height = brand.offsetHeight + 'px';
+          placeholder.classList.add('is-active');
+        } else {
+          brand.classList.remove('is-sticky');
+          placeholder.classList.remove('is-active');
+        }
+      }
+
+      window.addEventListener('scroll', onScroll);
+    })();
+  </script>
 </body>
 </html>
