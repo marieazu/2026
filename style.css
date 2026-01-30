@@ -36,6 +36,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2339FF;
 }
 
 img {
@@ -268,11 +273,6 @@ label {
 .section-nav ul a {
   font-size: 0.875rem;
   letter-spacing: 0.05em;
-  transition: color 0.3s;
-}
-
-.section-nav ul a:hover {
-  color: #2339FF;
 }
 
 /* ---- PROJECTS ---- */
@@ -353,13 +353,6 @@ label {
   margin-top: 1.5rem;
 }
 
-.about .about-links a {
-  transition: color 0.3s;
-}
-
-.about .about-links a:hover {
-  color: #2339FF;
-}
 
 /* ---- FOOTER ---- */
 footer {
