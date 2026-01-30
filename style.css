@@ -375,6 +375,88 @@ footer {
   letter-spacing: 0.05em;
 }
 
+/* ---- PROJECT PAGE ---- */
+.project-page {
+  scroll-snap-type: none;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+.project-hero-video {
+  width: 100%;
+  max-width: 960px;
+}
+
+.project-hero-video .placeholder-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--light-gray);
+  border-radius: 4px;
+}
+
+.project-content {
+  padding: 0 2.5rem 4rem;
+}
+
+.project-intro {
+  margin-bottom: 4rem;
+}
+
+.project-intro .project-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 1rem;
+}
+
+.project-intro p {
+  margin-bottom: 1.5rem;
+}
+
+.project-tags {
+  color: var(--gray);
+}
+
+.project-section {
+  margin-bottom: 4rem;
+}
+
+.project-block {
+  margin-bottom: 2.5rem;
+}
+
+.project-block h3 {
+  margin-bottom: 0.75rem;
+}
+
+.project-block p {
+  color: var(--gray);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 1.5rem;
+  }
+
+  .project-content {
+    padding: 0 1.5rem 3rem;
+  }
+}
+
 /* ---- WORKS PAGE ---- */
 .works-header {
   padding: 8rem 2.5rem 3rem;
