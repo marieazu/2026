@@ -391,17 +391,45 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.parallax-text-track {
+  display: inline-flex;
+  will-change: transform;
+}
+
+.parallax-text-track span {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--light-gray);
 }
 
 .project-hero-video {
   width: 100%;
   max-width: 960px;
+  position: relative;
+  z-index: 1;
 }
 
-.project-hero-video .placeholder-img {
+.project-hero-video video {
   width: 100%;
-  aspect-ratio: 16/9;
-  background: var(--light-gray);
+  display: block;
   border-radius: 4px;
 }
 
