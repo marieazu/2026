@@ -462,6 +462,26 @@ footer {
   margin-bottom: 4rem;
 }
 
+.project-image {
+  margin: 3rem 0;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.project-image.full-bleed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  border-radius: 0;
+}
+
+.project-image.full-bleed img {
+  width: 100%;
+  border-radius: 0;
+}
+
 .project-block {
   margin-bottom: 2.5rem;
 }
