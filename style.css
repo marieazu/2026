@@ -526,6 +526,11 @@ footer {
 .project-block p {
   color: var(--gray);
   line-height: 1.8;
+  margin-bottom: 1em;
+}
+
+.project-block p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
