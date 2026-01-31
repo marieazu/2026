@@ -483,7 +483,16 @@ footer {
   border-radius: 0;
 }
 
+.project-image--half {
+  max-width: 50%;
+}
+
+.project-image--golden-path {
+  max-width: 600px;
+}
+
 .project-block {
+  max-width: 800px;
   margin-bottom: 2.5rem;
 }
 
