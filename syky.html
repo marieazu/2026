@@ -47,54 +47,62 @@
     <!-- Intro -->
     <section class="project-intro">
       <h1 class="project-title">SYKY</h1>
-      <p class="body-large">SYKY is a community-driven platform where digital fashion designers release limited-edition collections and collectors showcase their NFT wardrobes. With London Fashion Week three months away, the team needed an MVP that supported discovery, purchase, and community-building.</p>
-      <h3 class="project-tags">Web &nbsp;&bull;&nbsp; Web3 &nbsp;&bull;&nbsp; Fashion &nbsp;&bull;&nbsp; Art Direction</h3>
+      <p class="body-large">MVP Launch for a Web3 Fashion Marketplace</p>
+      <h3 class="project-tags">Web3 &nbsp;&bull;&nbsp; Fashion</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>SYKY is a community-driven platform where digital fashion designers release limited-edition collections and collectors showcase their NFT wardrobes. With London Fashion Week three months away, the team needed an MVP that supported discovery, purchase, and community-building.</p>
+      </div>
     </section>
 
     <!-- Core Problem & Constraints -->
     <section class="project-section">
       <div class="project-block">
         <h3>Core Problem</h3>
-        <p>How do we design a coherent, premium marketplace experience that works for both creators and collectors, within a highly compressed timeline and with rapidly evolving requirements?</p>
+        <p>How do we design a premium, coherent marketplace experience that works for both creators and collectors, within a compressed timeline and rapidly evolving constraints?</p>
       </div>
 
       <div class="project-block">
         <h3>Constraints</h3>
-        <p>• Three-month window to ship an MVP aligned with LFW.<br>
-        • Web3 complexity (wallet setup, auctions, crypto payments) created barriers for new users.<br>
-        • Collections needed to feel bespoke, but the engineering team needed reusable, stable templates.<br>
-        • Brand visuals came from an external agency and were inconsistent across ongoing internal work.</p>
+        <p>• Three-month window to ship an MVP aligned with London Fashion Week<br>
+        • Web3 complexity (wallet setup, auctions, crypto payments) created barriers for new users<br>
+        • Collections needed to feel bespoke, while engineering required reusable templates<br>
+        • Brand visuals came from an external agency and were inconsistent across internal work</p>
       </div>
     </section>
-
-    <div class="project-image">
-      <img src="img/syky_goldenpath.png" alt="SYKY golden path diagram">
-    </div>
 
     <!-- Approach -->
     <section class="project-section">
       <div class="project-block">
         <h3>Approach</h3>
-        <p>Working with product owners, engineers, and early creators, we identified a single "golden path" to focus the MVP:</p>
+        <p>Working closely with product owners, engineers, and early creators, we identified a single golden path to anchor the MVP:</p>
         <p>• Browse exclusive designer drops<br>
         • Purchase or bid on limited-edition items<br>
         • Curate and display a personal NFT collection</p>
-        <p>This path became the backbone for scoping, sequencing, and validating design decisions.</p>
+        <p>This path shaped scoping, prioritisation, and design decisions throughout the project.</p>
       </div>
     </section>
 
-    <!-- 1. Two-Sided Marketplace -->
+    <div class="project-image project-image--golden-path">
+      <img src="img/syky_goldenpath.png" alt="SYKY golden path diagram">
+    </div>
+
+    <!-- 1. Balancing Creative Expression -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">1. Designing for a two-sided marketplace</h3>
-        <h3>Making each collection feel unique without fragmenting the system</h3>
-        <p>Creators wanted their drops to express their individual aesthetic, but engineering needed a unified template.</p>
-        <p><strong>Solution:</strong> We built a single layout structure but pushed asset-driven customisation. By varying artwork scale, imagery format, and motion, each collection gained a distinct identity while the underlying codebase remained consistent.</p>
-        <p>We also leveraged SYKY's "corridor" brand motif — a digital portal — by introducing subtle, abstract motion backgrounds. This reduced the flatness typical of MVPs and added visual depth without overwhelming readability.</p>
+        <h3 class="body-large">1. Balancing Creative Expression with System Constraints</h3>
+        <h3>Making each collection feel unique without fragmenting the platform</h3>
+        <p>Creators wanted their drops to express a distinct visual identity, while engineering needed a stable, reusable system.</p>
+        <p><strong>Solution:</strong> We designed a single layout structure and pushed differentiation through asset-driven customisation. By varying artwork scale, imagery formats, and motion treatments, each collection gained its own character while the underlying codebase remained consistent.</p>
+        <p>To reinforce the brand, we incorporated SYKY's "corridor" motif as subtle abstract motion backgrounds. This added depth and atmosphere without compromising legibility or performance, helping the MVP feel intentional rather than provisional.</p>
       </div>
     </section>
 
-    <div class="project-image">
+    <div class="project-image project-image--half">
       <video autoplay muted loop playsinline>
         <source src="vid/syky_02.mp4" type="video/mp4">
       </video>
@@ -103,10 +111,10 @@
     <!-- 2. Reducing Barriers -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">2. Reducing barriers to purchase</h3>
+        <h3 class="body-large">2. Reducing Barriers to Purchase</h3>
         <h3>Addressing crypto onboarding friction</h3>
-        <p>Many users didn't have a crypto wallet, and abandoning the site to set one up created significant drop-off.</p>
-        <p><strong>Solution:</strong> We integrated MoonPay to allow direct fiat purchases and top-ups. This removed the biggest blocker for first-time collectors and kept the entire checkout flow contained within SYKY.</p>
+        <p>Many users didn't have a wallet, and leaving the site to set one up introduced significant drop-off.</p>
+        <p><strong>Solution:</strong> We integrated MoonPay to support fiat purchases and top-ups directly within SYKY. This removed the biggest blocker for first-time collectors and kept the purchase journey contained, fast, and approachable.</p>
       </div>
     </section>
 
@@ -114,12 +122,13 @@
       <img src="img/syky_03.jpg" alt="SYKY reducing barriers to purchase">
     </div>
 
-    <!-- 3. Community Features -->
+    <!-- 3. Building Community -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">3. Building community features beyond Discord</h3>
-        <p>Users needed a way to express identity and connect without relying on external platforms.</p>
-        <p><strong>Solution:</strong> We designed profile pages where members could follow each other and customise their personal NFT gallery. This positioned SYKY as a place to collect and be seen — core to a fashion-focused community platform.</p>
+        <h3 class="body-large">3. Building Community Beyond Transactions</h3>
+        <h3>Supporting identity and connection outside Discord</h3>
+        <p>For a fashion-led platform, ownership alone wasn't enough. Users needed a way to express themselves and discover others.</p>
+        <p><strong>Solution:</strong> We designed member profiles where users could follow each other and curate a personal NFT gallery. This positioned SYKY as both a marketplace and a social space, reinforcing the idea of collecting as identity and visibility.</p>
       </div>
     </section>
 
@@ -130,22 +139,22 @@
     <!-- 4. Shipping Fast -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">4. Shipping fast without compromising quality</h3>
-        <p>With only weeks left before handoff, we tightened our collaboration with engineering:</p>
-        <p>• Daily stand-ups to resolve blockers.<br>
-        • Weekly or bi-weekly grooming to validate flows before sprint delivery.<br>
-        • Rapid iteration to ensure edge cases were covered before implementation.</p>
-        <p>This cadence kept the scope realistic and prevented last-minute surprises.</p>
+        <h3 class="body-large">4. Shipping Fast Without Compromising Quality</h3>
+        <p>With only weeks left before launch, collaboration with engineering became critical.</p>
+        <p>• Daily check-ins to unblock decisions<br>
+        • Weekly or bi-weekly grooming to validate flows before sprint delivery<br>
+        • Rapid iteration to cover edge cases ahead of implementation</p>
+        <p>This cadence kept scope realistic and avoided last-minute compromises.</p>
       </div>
     </section>
 
     <!-- Design System -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">Design system</h3>
-        <h3>Re-establishing consistency across a fragmented visual language</h3>
-        <p>An external agency had created initial concepts, while in-house designers were producing new screens under pressure. Visual inconsistencies were growing.</p>
-        <p><strong>Solution:</strong> I audited all existing designs to isolate the core visual identity, removed redundant styles, created reusable components, and filled missing gaps. This enabled fast parallel work while keeping the brand cohesive and high-fidelity.</p>
+        <h3 class="body-large">Design System</h3>
+        <h3>Re-establishing consistency under pressure</h3>
+        <p>An external agency had delivered initial concepts while in-house designers produced new features in parallel. Visual inconsistency was growing.</p>
+        <p><strong>Solution:</strong> I audited existing designs to isolate the core visual language, removed redundant styles, and created a reusable component system. This allowed designers to move quickly while maintaining coherence and high fidelity across the product.</p>
       </div>
     </section>
 
@@ -157,10 +166,11 @@
     <section class="project-section">
       <div class="project-block">
         <h3>Impact</h3>
-        <p>The MVP launched successfully in time for London Fashion Week. The invite-only community engaged immediately, and the debut collection by Sunw performed strongly:</p>
-        <p>• One piece sold out within two days<br>
-        • The auction item received bids until the final hour</p>
-        <p>The MVP established the foundation for SYKY's long-term platform, community, and brand expression.</p>
+        <p>The MVP launched successfully in time for London Fashion Week.</p>
+        <p>Engagement was strong from day one:</p>
+        <p>• One item from the debut Sunw collection sold out within two days<br>
+        • The auction piece received bids until the final hour</p>
+        <p>The MVP established a clear product vision and validated the core experience around drops, purchasing, and community.</p>
       </div>
     </section>
 
