@@ -194,6 +194,12 @@ label {
   transition: color 0.3s;
 }
 
+.sticky-nav .nav-dot {
+  font-size: 14px;
+  color: inherit;
+  user-select: none;
+}
+
 .sticky-nav a:hover {
   color: #2339FF;
 }
