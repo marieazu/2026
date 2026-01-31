@@ -432,7 +432,7 @@ footer {
 }
 
 .project-content {
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 2.5rem 4rem;
 }
@@ -470,6 +470,15 @@ footer {
 .project-image video {
   width: 100%;
   border-radius: 4px;
+}
+
+.project-image.goldenpath img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.project-image.half-width {
+  max-width: 50%;
 }
 
 .project-image.full-bleed {
