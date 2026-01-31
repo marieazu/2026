@@ -152,8 +152,7 @@ label {
   right: 0;
   z-index: 100;
   padding: 1.5rem 2.5rem 24px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+  background: transparent;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
@@ -414,10 +413,11 @@ footer {
 .parallax-text-track span {
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: clamp(4rem, 10vw, 8rem);
-  letter-spacing: 0.15em;
+  font-size: 96px;
+  line-height: 150%;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--light-gray);
+  color: #000000;
 }
 
 .project-hero-video {
