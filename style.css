@@ -180,11 +180,12 @@ label {
 
 .sticky-nav {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 
 .sticky-nav a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -195,7 +196,8 @@ label {
 }
 
 .sticky-nav .nav-dot {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 28px;
   color: inherit;
   user-select: none;
 }
