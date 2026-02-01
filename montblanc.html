@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="project-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montblanc — AZÜ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Sticky Brand (always visible on project pages) -->
+  <div class="sticky-brand is-visible">
+    <a href="index.html" class="brand-link"><h1 class="brand">AZÜ</h1></a>
+    <nav class="sticky-nav">
+      <a href="index.html#projects">Works</a>
+      <span class="nav-dot">&bull;</span>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero Image -->
+  <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <!-- Intro -->
+    <section class="project-intro">
+      <h1 class="project-title">Montblanc</h1>
+      <p class="body-large">Elevating E-commerce Within a Platform Constraint</p>
+      <h3 class="project-tags">E-commerce &nbsp;&bull;&nbsp; Luxury</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>Montblanc partnered with YOOX Net-A-Porter to elevate their e-commerce experience. While the partnership provided scale and infrastructure, it also imposed strict CMS templates and technical constraints. The challenge was to create a distinctly Montblanc experience without breaking the rules of the platform.</p>
+      </div>
+    </section>
+
+    <!-- Core Problem & Constraints -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Core Problem</h3>
+        <p>How do you deliver a premium, bespoke brand experience inside a shared e-commerce platform designed for many brands?</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Constraints</h3>
+        <p>• Fixed YOOX CMS templates and interaction patterns<br>
+        • Limited flexibility in layout and navigation<br>
+        • Performance and platform guidelines that restricted custom behaviour<br>
+        • Close dependency on YOOX engineering decisions</p>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Approach</h3>
+        <p>We worked in close collaboration with Montblanc stakeholders and YOOX engineers using frequent check-ins to test ideas against platform constraints early. Rather than fighting the system, we focused on identifying where flexibility existed and pushing those areas deliberately.</p>
+      </div>
+    </section>
+
+    <!-- Discovery & Definition -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Discovery &amp; Definition</h3>
+        <p>Early exploration focused on three key questions:</p>
+        <p>• How can we encourage product discovery within a rigid navigation system?<br>
+        • How do we express Montblanc's updated brand direction without fragmenting the platform?<br>
+        • Where can motion and interaction add value without compromising performance?</p>
+        <p>These questions guided design decisions throughout the project.</p>
+      </div>
+    </section>
+
+    <!-- 1. Encouraging Discovery Through Navigation -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">1. Encouraging Discovery Through Navigation</h3>
+        <h3>Challenge</h3>
+        <p>Users needed a clearer sense of Montblanc's full product range, but default navigation patterns were limiting exploration.</p>
+        <h3>Solution</h3>
+        <p>We introduced a side-panel navigation that expanded progressively, making better use of screen real estate while remaining compliant with YOOX guidelines. Micro-interactions were carefully designed in collaboration with engineering, testing hover versus click behaviours to balance usability across devices.</p>
+      </div>
+    </section>
+
+    <!-- 2. Translating the In-Store Experience Online -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">2. Translating the In-Store Experience Online</h3>
+        <h3>Challenge</h3>
+        <p>Luxury products rely heavily on materiality and detail, which are difficult to communicate through static templates.</p>
+        <h3>Solution</h3>
+        <p>We prioritised rich product imagery and immersive content, incorporating video and 3D elements where supported. This helped bridge the gap between physical and digital browsing, allowing users to explore craftsmanship and form without visiting a store.</p>
+      </div>
+    </section>
+
+    <!-- 3. Standing Out Within a Shared CMS -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">3. Standing Out Within a Shared CMS</h3>
+        <h3>Challenge</h3>
+        <p>The site needed to feel distinctly Montblanc while operating within YOOX's standardised CMS.</p>
+        <h3>Solution</h3>
+        <p>By working closely with developers, we identified edge cases where the CMS could support more advanced behaviour. Subtle motion, crafted transitions, and refined spacing allowed the experience to feel bespoke without sacrificing performance or maintainability.</p>
+      </div>
+    </section>
+
+    <!-- Outcome -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Outcome</h3>
+        <p>The result was a refined, durable e-commerce experience that respected platform constraints while elevating Montblanc's brand presence. The site balanced elegance with usability, improved product discovery, and delivered a consistent experience across devices — proving that strong brand expression is possible even within highly structured systems.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>&copy; 2026 AZÜ — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+</body>
+</html>
