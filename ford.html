@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="project-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford — AZÜ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Sticky Brand (always visible on project pages) -->
+  <div class="sticky-brand is-visible">
+    <a href="index.html" class="brand-link"><h1 class="brand">AZÜ</h1></a>
+    <nav class="sticky-nav">
+      <a href="index.html#projects">Works</a>
+      <span class="nav-dot">&bull;</span>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero Video -->
+  <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;FORD&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <!-- Intro -->
+    <section class="project-intro">
+      <h1 class="project-title">Ford</h1>
+      <p class="body-large">Scaling a Design System Across Europe</p>
+      <h3 class="project-tags">E-commerce &nbsp;&bull;&nbsp; Automotive</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>Ford was rolling out a new art direction globally, with the US site setting the visual benchmark. The European platform needed to align with this direction while supporting multiple internal teams contributing in parallel. Over time, the existing design system had become fragmented, inconsistent, and difficult to maintain.</p>
+      </div>
+    </section>
+
+    <!-- Core Problem & Constraints -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Core Problem</h3>
+        <p>How do we create a single, scalable design system that supports multiple teams, aligns with a global visual direction, and meets strict accessibility standards without slowing down delivery?</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Constraints</h3>
+        <p>• Multiple teams contributing to the same system across markets<br>
+        • Existing components already implemented in production<br>
+        • High accessibility requirements (WCAG AA and above)<br>
+        • A system large enough that future changes risked being slow and error-prone</p>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Approach</h3>
+        <p>The work focused on turning a fragmented set of design assets into a dependable system, establishing a single source of truth for consistency, accessibility, and long-term scalability.</p>
+        <p>This required auditing real usage in both design and code, working closely with engineering, and restructuring the system around tokens and variables instead of static styles.</p>
+      </div>
+    </section>
+
+    <!-- 1. Establishing a Single Source of Truth -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">1. Establishing a Single Source of Truth</h3>
+        <h3>Reducing redundancy and defining canonical components</h3>
+        <p>There were too many font sizes, components, and style variations in circulation. Designers were unsure which options were correct, and different teams were making different assumptions.</p>
+        <p><strong>Solution:</strong> We audited all existing design files and cross-referenced them with what was already live in production. Where multiple options existed, we prioritised:</p>
+        <p>• What was already implemented in code<br>
+        • What met accessibility standards most reliably</p>
+        <p>This allowed us to reduce redundancy and clearly define which components and styles were canonical.</p>
+      </div>
+    </section>
+
+    <!-- 2. Designing for Scalability and Change -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">2. Designing for Scalability and Change</h3>
+        <h3>Building a token-based system for global consistency</h3>
+        <p>Given the size of the system, even small updates risked being time-consuming and prone to human error.</p>
+        <p><strong>Solution:</strong> We rebuilt the system using Figma tokens and variables wherever possible. This allowed global changes to be made centrally and applied consistently across the system.</p>
+        <p>A clear naming convention was defined early, designed to scale as the system evolved. This was done in close collaboration with engineering to ensure alignment with existing and planned implementation patterns.</p>
+      </div>
+    </section>
+
+    <!-- 3. Accessibility as a System Constraint -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">3. Accessibility as a System Constraint</h3>
+        <h3>Making accessibility decisions visible and repeatable</h3>
+        <p>The system included a wide colour palette, plus light and dark modes, creating a large number of colour combinations that needed to meet WCAG AA standards.</p>
+        <p><strong>Solution:</strong> We created a comprehensive colour reference that documented all approved combinations and explicitly excluded pairings that failed accessibility checks. This made accessibility decisions visible and repeatable, rather than something designers had to re-evaluate each time.</p>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Impact</h3>
+        <p>The result was a unified design system that acted as a reliable foundation for Ford Europe's digital products. It reduced inconsistency across teams, lowered the risk of errors during iteration, and ensured accessibility was built into the system rather than retrofitted.</p>
+        <p>Most importantly, it enabled teams to move faster with more confidence, knowing they were designing within a clear, scalable framework.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>&copy; 2026 AZÜ — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+  <script>
+    (function() {
+      document.querySelectorAll('.sticky-nav a[href^="index.html#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.location.href = link.getAttribute('href');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
