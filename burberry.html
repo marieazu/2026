@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burberry — AZÜ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Sticky Brand (always visible on project pages) -->
+  <div class="sticky-brand is-visible">
+    <a href="index.html" class="brand-link"><h1 class="brand">AZÜ</h1></a>
+    <nav class="sticky-nav">
+      <a href="index.html#projects">Works</a>
+      <span class="nav-dot">&bull;</span>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero Video -->
+  <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;BURBERRY&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <div class="project-hero-video">
+      <video autoplay muted loop playsinline>
+        <source src="vid/burberry_00.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <!-- Intro -->
+    <section class="project-intro">
+      <h1 class="project-title">Burberry</h1>
+      <p class="body-large">E-commerce redesign during rebrand and backend migration</p>
+      <h3 class="project-tags">E-commerce &nbsp;&bull;&nbsp; Fashion</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>Burberry was undergoing its first major rebrand in over a decade while simultaneously migrating its e-commerce backend. The goal was to modernise the shopping experience without introducing functional risk or extending the migration timeline.</p>
+      </div>
+    </section>
+
+    <!-- Core Problem & Constraints -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Core Problem</h3>
+        <p>How do we align the site with the new brand direction and reduce friction across the customer journey when the underlying system cannot support major feature changes?</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Constraints</h3>
+        <p>• Backend migration limited what could be altered<br>
+        • Existing user behaviour revealed friction at PLP, PDP, and homepage<br>
+        • Multiple disciplines (merchandising, engineering, analytics) with distinct priorities</p>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Approach</h3>
+        <p>We focused on identifying where design changes would deliver the highest impact with the lowest implementation risk.</p>
+        <p>Working closely with merchandising, analytics, and engineering, we mapped the key challenges for each page type. Insights were drawn from current behaviour data, qualitative testing from previous cycles, and engineering feasibility assessments. This allowed us to prioritise changes grounded in evidence rather than aesthetic preference.</p>
+      </div>
+    </section>
+
+    <!-- 1. Reducing Friction in Product Discovery -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">1. Reducing friction in product discovery</h3>
+        <h3>Dynamic filtering to prevent dead ends</h3>
+        <p>Users frequently reached zero-result states after applying multiple filters. Analytics showed these drop-offs correlated with lower add-to-bag rates.</p>
+        <p><strong>Solution:</strong> We introduced real-time filtering logic that removed invalid filter combinations as users made selections, ensuring the PLP always returned a viable product set.</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Simplifying decision-making</h3>
+        <p>The favourites icon was rarely used and often illegible against product imagery. Testing showed users frequently added items to their bag as a workaround for shortlisting.</p>
+        <p><strong>Solution:</strong> We deprioritised favourites for launch and removed the icon from product cards to reduce visual noise and focus attention on primary actions.</p>
+      </div>
+    </section>
+
+    <!-- 2. Clarifying Navigation and Homepage Behaviour -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">2. Clarifying navigation and homepage behaviour</h3>
+        <p>Analytics showed most users bypassed the homepage entirely, navigating directly to products via search or the mega-nav. Users who did land on the homepage rarely scrolled.</p>
+        <p><strong>Solution:</strong> We increased the prominence of navigation, shortened the homepage, and ensured each component clearly routed users into a category. The homepage was treated as a navigation surface rather than a storytelling canvas.</p>
+      </div>
+    </section>
+
+    <!-- 3. Strengthening Brand Expression Through Interaction -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">3. Strengthening brand expression through interaction</h3>
+        <p>With functional scope limited by the migration, we focused on refining micro-interactions and animation. Each component was evaluated for how motion could guide users or subtly express the new brand without compromising performance. We worked closely with engineering to validate feasibility and maintain load speed.</p>
+      </div>
+    </section>
+
+    <!-- Design System -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">Design system</h3>
+        <p>Although the system was built primarily for web teams, it influenced app and marketing outputs. We contributed to the foundational tokens and interaction principles, and created a companion presentation to help cross-functional teams align on the new interaction language and visual direction.</p>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Impact</h3>
+        <p>The redesign was released gradually over the course of a year to minimise risk during the migration. Each phase was monitored and adjusted based on performance.</p>
+        <p>• Homepage bounce rate reduced by 10%<br>
+        • PLP bounce rate reduced by 5%<br>
+        • Filtering dead-end cases eliminated</p>
+        <p>The site has since been redesigned again, but this release successfully bridged a major brand transition while maintaining stability during a sensitive technical shift.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>&copy; 2026 AZÜ — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+</body>
+</html>
