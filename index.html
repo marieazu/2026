@@ -113,6 +113,14 @@
 
       window.addEventListener('scroll', onScroll);
       onScroll();
+
+      // Instant scroll to hash target when arriving from another page
+      if (window.location.hash) {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'instant' });
+        }
+      }
     })();
   </script>
 </body>
