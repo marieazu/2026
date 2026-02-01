@@ -433,6 +433,15 @@ footer {
   z-index: 1;
 }
 
+.project-hero-video::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  box-shadow: 0 32px 100px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
 .project-hero-video video {
   width: 100%;
   display: block;
