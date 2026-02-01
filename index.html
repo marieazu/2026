@@ -118,7 +118,15 @@
       if (window.location.hash) {
         var target = document.querySelector(window.location.hash);
         if (target) {
+          // Temporarily disable scroll-snap so hash navigation lands correctly
+          document.documentElement.style.scrollSnapType = 'none';
           target.scrollIntoView({ behavior: 'instant' });
+          // Re-enable scroll-snap after navigation completes
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              document.documentElement.style.scrollSnapType = '';
+            });
+          });
         }
       }
     })();
