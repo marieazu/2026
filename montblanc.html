@@ -20,12 +20,27 @@
 
   <!-- Hero Video -->
   <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;MONTBLANC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
     <div class="project-hero-video">
       <video autoplay muted loop playsinline>
         <source src="vid/montblanc_00.mp4" type="video/mp4">
       </video>
     </div>
   </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
 
   <!-- Project Content -->
   <div class="project-content">
