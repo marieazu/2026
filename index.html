@@ -113,6 +113,15 @@
 
       window.addEventListener('scroll', onScroll);
       onScroll();
+
+      if (window.location.hash) {
+        var target = document.querySelector(window.location.hash);
+        if (target) {
+          document.documentElement.style.scrollBehavior = 'auto';
+          target.scrollIntoView();
+          document.documentElement.style.scrollBehavior = '';
+        }
+      }
     })();
   </script>
 </body>
