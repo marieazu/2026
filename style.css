@@ -403,14 +403,6 @@ footer {
   overflow: hidden;
 }
 
-.project-hero > img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
 
 .parallax-text {
   position: absolute;
@@ -454,7 +446,8 @@ footer {
   pointer-events: none;
 }
 
-.project-hero-video video {
+.project-hero-video video,
+.project-hero-video img {
   width: 100%;
   display: block;
   border-radius: 4px;
