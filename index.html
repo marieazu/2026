@@ -114,20 +114,28 @@
       window.addEventListener('scroll', onScroll);
       onScroll();
 
-      // Instant scroll to hash target when arriving from another page
-      if (window.location.hash) {
+      // Scroll to hash target when arriving from another page
+      function scrollToHash() {
+        if (!window.location.hash) return;
         var target = document.querySelector(window.location.hash);
-        if (target) {
-          // Temporarily disable scroll-snap so hash navigation lands correctly
-          document.documentElement.style.scrollSnapType = 'none';
-          target.scrollIntoView({ behavior: 'instant' });
-          // Re-enable scroll-snap after navigation completes
-          requestAnimationFrame(function() {
-            requestAnimationFrame(function() {
-              document.documentElement.style.scrollSnapType = '';
-            });
-          });
-        }
+        if (!target) return;
+        // Disable scroll-snap so hash navigation lands correctly
+        document.documentElement.style.scrollSnapType = 'none';
+        target.scrollIntoView({ behavior: 'instant' });
+        onScroll();
+        // Re-enable scroll-snap after a delay to prevent snap-back
+        setTimeout(function() {
+          document.documentElement.style.scrollSnapType = '';
+        }, 400);
+      }
+
+      // Run on initial load and also on hash change (back/forward navigation)
+      window.addEventListener('hashchange', scrollToHash);
+      // Use both DOMContentLoaded timing (now) and load for reliability
+      if (document.readyState === 'complete') {
+        scrollToHash();
+      } else {
+        window.addEventListener('load', scrollToHash);
       }
     })();
   </script>
