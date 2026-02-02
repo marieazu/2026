@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="project-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSW Health — AZÜ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Sticky Brand (always visible on project pages) -->
+  <div class="sticky-brand is-visible">
+    <a href="index.html" class="brand-link"><h1 class="brand">AZÜ</h1></a>
+    <nav class="sticky-nav">
+      <a href="index.html#projects">Works</a>
+      <span class="nav-dot">&bull;</span>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;BSW Health&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <!-- Intro -->
+    <section class="project-intro">
+      <h1 class="project-title">BSW Health</h1>
+      <p class="body-large">Conversational health assistant for patient self service</p>
+      <h3 class="project-tags">Web &amp; App &nbsp;&bull;&nbsp; AI</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>Baylee is a generative AI assistant embedded in the Baylor Scott &amp; White Health app, designed to help patients complete common healthcare tasks through natural language.</p>
+        <p>This project focused on designing the Alpha release: establishing a safe, coherent foundation for conversational care that could support real patient needs within a medical context.</p>
+      </div>
+    </section>
+
+    <!-- Core Problem & Constraints -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Core problem</h3>
+        <p>How do we design a conversational AI experience that allows patients to complete real healthcare tasks end to end, while remaining safe, accessible, and clear within the constraints of a chat interface?</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Constraints</h3>
+        <p>• Healthcare safety and compliance required strong guardrails, especially for urgent or red flag scenarios<br>
+        • Chat needed to support complex, multi step flows without feeling overwhelming<br>
+        • Tone and motion needed to feel calm and clinical, not playful or anthropomorphic</p>
+      </div>
+    </section>
+
+    <!-- Establishing a usable conversational foundation -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">Establishing a usable conversational foundation</h3>
+        <p>We focused on making chat genuinely useful, not just conversational. Priority was given to flows that already existed in the product but felt fragmented, hard to find, or disruptive when users were redirected away from their task.</p>
+        <p>Key flows included:<br>
+        • Symptom triage<br>
+        • Scheduling assistance<br>
+        • Billing assistance</p>
+        <p>Where possible, users could start and progress through these flows directly in chat, with clear handoff only when leaving chat was required.</p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">Designing for clarity in chat</h3>
+        <p>Healthcare conversations can quickly become overwhelming. To avoid this, we designed for restraint and legibility:</p>
+        <p>• Broke conversations into small, scannable steps<br>
+        • Asked only the minimum information required<br>
+        • Avoided medical jargon and unnecessary verbosity</p>
+        <p>At this stage, we intentionally favoured familiar components and clear CTAs over novel interaction patterns, prioritising safety and comprehension over expressiveness.</p>
+      </div>
+    </section>
+
+    <!-- Safety and guardrails -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">Safety and guardrails</h3>
+        <p>Safety was a first class design consideration.</p>
+        <p>We designed explicit handling for urgent and red flag inputs across physical and mental health scenarios. When risk is detected:</p>
+        <p>• Tone becomes direct, calm, and supportive<br>
+        • A persistent banner guides users toward immediate help<br>
+        • Copy avoids reassurance or diagnosis and prioritises real world escalation</p>
+        <p>The experience clearly communicates that chat is not appropriate for emergencies, while maintaining trust and continuity.</p>
+      </div>
+    </section>
+
+    <!-- Motion and accessibility -->
+    <section class="project-section">
+      <div class="project-block">
+        <p>Motion was used sparingly and purposefully.</p>
+        <p>We defined motion and accessibility guidelines to ensure:</p>
+        <p>• Reduce motion preferences are respected<br>
+        • Motion clarifies change rather than adds decoration<br>
+        • Focus states and meaning are preserved during transitions</p>
+        <p>These guidelines were documented as a practical checklist to support design, engineering, and QA.</p>
+      </div>
+    </section>
+
+    <!-- QA findings -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">What we identified through QA</h3>
+        <p>Reviewing the Alpha experience surfaced opportunities for future iterations, including:</p>
+        <p>• Richer interaction patterns for complex medical inputs<br>
+        • More expressive UI aligned with clinical frameworks such as OLDCARTS and CLARITY<br>
+        • Expanded in-chat completion for advanced flows like estimates and insurance management</p>
+        <p>These were intentionally documented as next steps rather than included in the initial release.</p>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Impact</h3>
+        <p>This work delivered a conversational AI experience ready for internal employee testing and stakeholder evaluation.</p>
+        <p>It helped:</p>
+        <p>• Demonstrate that AI can safely support real patient tasks<br>
+        • Build confidence across clinical, product, and compliance teams<br>
+        • Establish shared expectations around tone, safety, and scope<br>
+        • Turn abstract discussions about AI into a tangible product experience</p>
+        <p>By grounding Baylee in realistic flows and clear guardrails, the Alpha release became a credible proof point for AI-powered patient self service in healthcare.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>&copy; 2026 AZÜ — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+</body>
+</html>
