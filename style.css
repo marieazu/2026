@@ -454,7 +454,7 @@ footer {
 }
 
 .project-hero-video--mobile {
-  max-width: 341px;
+  max-width: 300px;
 }
 
 .project-content {
@@ -703,5 +703,18 @@ footer {
 @media (max-width: 480px) {
   .project-item .project-name {
     font-size: 20px;
+  }
+
+  p,
+  h6 {
+    min-width: 0;
+  }
+
+  .cover .collection {
+    width: 100%;
+  }
+
+  .cover .brand-line {
+    width: 100%;
   }
 }
