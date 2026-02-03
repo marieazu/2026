@@ -560,6 +560,16 @@ footer {
   .project-content {
     padding: 0 1.5rem 3rem;
   }
+
+  .project-hero-video--mobile video {
+    max-height: 70vh;
+    object-fit: contain;
+  }
+
+  .project-image video {
+    max-height: 70vh;
+    object-fit: contain;
+  }
 }
 
 /* ---- WORKS PAGE ---- */
