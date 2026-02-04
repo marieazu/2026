@@ -240,6 +240,7 @@ label {
 .cover .brand-line {
   width: 438px;
   max-width: 100%;
+  min-width: 400px;
   height: 6px;
   background: var(--black);
   margin: 1.5rem 0;
@@ -272,6 +273,7 @@ label {
   padding-top: 1.5rem;
   width: 438px;
   max-width: 100%;
+  min-width: 400px;
 }
 
 /* ---- SECTION NAV (inside cover) ---- */
@@ -719,9 +721,11 @@ footer {
 
   .cover .collection {
     width: 100%;
+    min-width: 0;
   }
 
   .cover .brand-line {
     width: 100%;
+    min-width: 0;
   }
 }
