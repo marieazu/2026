@@ -719,6 +719,10 @@ footer {
     max-width: 100%;
   }
 
+  .cover {
+    padding: 5rem 24px 80px;
+  }
+
   .cover .collection {
     width: 100%;
     min-width: 0;
@@ -727,5 +731,9 @@ footer {
   .cover .brand-line {
     width: 100%;
     min-width: 0;
+  }
+
+  .parallax-text-track span {
+    font-size: 48px;
   }
 }
