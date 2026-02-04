@@ -238,11 +238,12 @@ label {
 }
 
 .cover .brand-line {
-  width: 438px;
-  max-width: 100%;
+  width: 100vw;
+  margin-left: -2.5rem;
   height: 6px;
   background: var(--black);
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .cover .name {
@@ -270,8 +271,9 @@ label {
   color: var(--gray);
   border-top: 2px solid var(--black);
   padding-top: 1.5rem;
-  width: 438px;
-  max-width: 100%;
+  width: 100vw;
+  margin-left: -2.5rem;
+  padding-left: 2.5rem;
 }
 
 /* ---- SECTION NAV (inside cover) ---- */
@@ -704,6 +706,15 @@ footer {
     gap: 0.5rem;
     text-align: center;
   }
+
+  .cover .brand-line {
+    margin-left: -1.5rem;
+  }
+
+  .cover .collection {
+    margin-left: -1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -715,13 +726,5 @@ footer {
   h6 {
     min-width: 0;
     max-width: 100%;
-  }
-
-  .cover .collection {
-    width: 100%;
-  }
-
-  .cover .brand-line {
-    width: 100%;
   }
 }
