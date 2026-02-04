@@ -454,7 +454,7 @@ footer {
 }
 
 .project-hero-video--mobile {
-  max-width: 300px;
+  max-width: 341px;
 }
 
 .project-content {
@@ -684,6 +684,12 @@ footer {
     padding: 0 1.5rem 80px;
   }
 
+  p,
+  h6 {
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .works-header {
     padding: 6rem 1.5rem 2rem;
   }
@@ -708,6 +714,7 @@ footer {
   p,
   h6 {
     min-width: 0;
+    max-width: 100%;
   }
 
   .cover .collection {
