@@ -690,6 +690,11 @@ footer {
     min-width: 0;
   }
 
+  .cover .brand-line,
+  .cover .collection {
+    width: 100%;
+  }
+
   .works-header {
     padding: 6rem 1.5rem 2rem;
   }
@@ -709,19 +714,5 @@ footer {
 @media (max-width: 480px) {
   .project-item .project-name {
     font-size: 20px;
-  }
-
-  p,
-  h6 {
-    min-width: 0;
-    max-width: 100%;
-  }
-
-  .cover .collection {
-    width: 100%;
-  }
-
-  .cover .brand-line {
-    width: 100%;
   }
 }
