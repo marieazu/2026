@@ -48,7 +48,7 @@
     <!-- Intro -->
     <section class="project-intro">
       <h1 class="project-title">BSW Health</h1>
-      <p class="body-large">Conversational health assistant for patient self service</p>
+      <p class="body-large">Conversational AI Assistant for Patient Self-Service</p>
       <h3 class="project-tags">Web &amp; App &nbsp;&bull;&nbsp; AI &nbsp;&bull;&nbsp; Healthcare</h3>
     </section>
 
@@ -56,23 +56,15 @@
     <section class="project-section">
       <div class="project-block">
         <h3>Context</h3>
-        <p>Baylee is a generative AI assistant embedded in the Baylor Scott &amp; White Health app, designed to help patients complete common healthcare tasks through natural language.</p>
-        <p>This project focused on designing the Alpha release: establishing a safe, coherent foundation for conversational care that could support real patient needs within a medical context.</p>
+        <p>Baylee is a generative AI assistant integrated into the Baylor Scott &amp; White Health app, designed to help patients manage healthcare tasks through natural language. This project focused on the Alpha release: establishing a safe, coherent foundation for conversational care that addressed real patient needs within a rigorous medical context.</p>
       </div>
     </section>
 
-    <!-- Core Problem & Constraints -->
+    <!-- Core Challenge -->
     <section class="project-section">
       <div class="project-block">
-        <h3>Core problem</h3>
-        <p>How do we design a conversational AI experience that allows patients to complete real healthcare tasks end to end, while remaining safe, accessible, and clear within the constraints of a chat interface?</p>
-      </div>
-
-      <div class="project-block">
-        <h3>Constraints</h3>
-        <p>• Healthcare safety and compliance required strong guardrails, especially for urgent or red flag scenarios<br>
-        • Chat needed to support complex, multi step flows without feeling overwhelming<br>
-        • Tone and motion needed to feel calm and clinical, not playful or anthropomorphic</p>
+        <h3>Core Challenge</h3>
+        <p>Our objective was to design a conversational experience that allowed patients to complete complex healthcare tasks end-to-end. The interface had to remain accessible and clear while navigating strict medical guardrails, ensuring the tone felt calm and clinical rather than overly anthropomorphic.</p>
       </div>
 
       <div class="project-image">
@@ -80,27 +72,21 @@
       </div>
     </section>
 
-    <!-- Establishing a usable conversational foundation -->
+    <!-- Strategic Approach -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">Establishing a usable conversational foundation</h3>
-        <p>We focused on making chat genuinely useful, not just conversational. Priority was given to flows that already existed in the product but felt fragmented, hard to find, or disruptive when users were redirected away from their task.</p>
-        <p>Key flows included:<br>
-        • Symptom triage<br>
-        • Scheduling assistance<br>
-        • Billing assistance</p>
-        <p>Where possible, users could start and progress through these flows directly in chat, with clear handoff only when leaving chat was required.</p>
+        <h3 class="body-large">Strategic Approach</h3>
+        <p>We prioritised making the chat genuinely functional rather than just conversational. By identifying fragmented or hard-to-find user flows—such as symptom triage, scheduling, and billing—we brought these actions directly into the chat interface to reduce user friction and prevent unnecessary redirects.</p>
       </div>
     </section>
 
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">Designing for clarity in chat</h3>
-        <p>Healthcare conversations can quickly become overwhelming. To avoid this, we designed for restraint and legibility:</p>
-        <p>• Broke conversations into small, scannable steps<br>
-        • Asked only the minimum information required<br>
-        • Avoided medical jargon and unnecessary verbosity</p>
-        <p>At this stage, we intentionally favoured familiar components and clear CTAs over novel interaction patterns, prioritising safety and comprehension over expressiveness.</p>
+        <h3 class="body-large">1. Conversational Clarity and Legibility</h3>
+        <p>Simplifying complex medical flows</p>
+        <p>Healthcare data can quickly become overwhelming, especially within the narrow constraints of a mobile chat interface.</p>
+        <p>Solution:<br>
+        We designed for extreme restraint. Conversations were broken into small, scannable steps that requested only the minimum information required. By avoiding medical jargon and prioritising familiar UI components and clear calls to action, we ensured that safety and comprehension remained the primary focus.</p>
       </div>
     </section>
 
@@ -113,25 +99,22 @@
     <!-- Safety and guardrails -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">Safety and guardrails</h3>
-        <p>Safety was a first class design consideration.</p>
-        <p>We designed explicit handling for urgent and red flag inputs across physical and mental health scenarios. When risk is detected:</p>
-        <p>• Tone becomes direct, calm, and supportive<br>
-        • A persistent banner guides users toward immediate help<br>
-        • Copy avoids reassurance or diagnosis and prioritises real world escalation</p>
-        <p>The experience clearly communicates that chat is not appropriate for emergencies, while maintaining trust and continuity.</p>
+        <h3 class="body-large">2. Safety Systems and Guardrails</h3>
+        <p>Designing for high-stakes escalation</p>
+        <p>In a medical environment, safety is a primary design constraint. We had to ensure the AI could handle urgent or "red flag" inputs with absolute precision.</p>
+        <p>Solution:<br>
+        We developed explicit UI behaviours for risk scenarios. When an urgent input is detected, the interface shifts: the tone becomes direct and supportive, and a persistent banner guides the user toward immediate emergency help. We ensured the copy avoided diagnostic reassurance, instead prioritising clear, real-world escalation paths.</p>
       </div>
     </section>
 
     <!-- Motion and accessibility -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">Motion used sparingly and purposefully</h3>
-        <p>We defined motion and accessibility guidelines to ensure:</p>
-        <p>• Reduce motion preferences are respected<br>
-        • Motion clarifies change rather than adds decoration<br>
-        • Focus states and meaning are preserved during transitions</p>
-        <p>These guidelines were documented as a practical checklist to support design, engineering, and QA.</p>
+        <h3 class="body-large">3. Purposeful Motion and Accessibility</h3>
+        <p>Using interaction to clarify rather than decorate</p>
+        <p>For patients who may be in distress or have accessibility needs, unnecessary animation can be distracting or physically disruptive.</p>
+        <p>Solution:<br>
+        We established strict motion and accessibility guidelines. Motion was used exclusively to clarify state changes or transitions, ensuring that focus states were preserved and "reduce motion" preferences were respected. We documented these as a practical checklist for engineering and QA to ensure the interface remained stable and inclusive.</p>
       </div>
     </section>
 
@@ -141,15 +124,11 @@
       </video>
     </div>
 
-    <!-- QA findings -->
+    <!-- Design Maturity and Future Scope -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">What we identified through QA</h3>
-        <p>Reviewing the Alpha experience surfaced opportunities for future iterations, including:</p>
-        <p>• Richer interaction patterns for complex medical inputs<br>
-        • More expressive UI aligned with clinical frameworks such as OLDCARTS and CLARITY<br>
-        • Expanded in-chat completion for advanced flows like estimates and insurance management</p>
-        <p>These were intentionally documented as next steps rather than included in the initial release.</p>
+        <h3 class="body-large">Design Maturity and Future Scope</h3>
+        <p>During the Alpha QA phase, we identified specific opportunities for the next stage of the product. This included the development of richer interaction patterns for complex medical inputs and an expanded UI aligned with clinical frameworks such as OLDCARTS. By documenting these as intentional next steps, we maintained a tight, safe scope for the initial release.</p>
       </div>
     </section>
 
@@ -157,13 +136,10 @@
     <section class="project-section">
       <div class="project-block">
         <h3 class="body-large">Impact</h3>
-        <p>This work delivered a conversational AI experience ready for internal employee testing and stakeholder evaluation.</p>
-        <p>It helped:</p>
-        <p>• Demonstrate that AI can safely support real patient tasks<br>
-        • Build confidence across clinical, product, and compliance teams<br>
-        • Establish shared expectations around tone, safety, and scope<br>
-        • Turn abstract discussions about AI into a tangible product experience</p>
-        <p>By grounding Baylee in realistic flows and clear guardrails, the Alpha release became a credible proof point for AI-powered patient self service in healthcare.</p>
+        <p>The Alpha release successfully turned abstract discussions about AI into a tangible, credible product experience, building significant confidence across clinical and compliance teams.</p>
+        <p>• Feasibility: Demonstrated that AI can safely support end-to-end patient tasks.<br>
+        • Trust: Established a shared framework for tone, safety, and medical scope.<br>
+        • Validation: Provided a functional proof-of-point for AI-powered self-service in a highly regulated industry.</p>
       </div>
     </section>
 
