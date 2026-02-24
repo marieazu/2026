@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="project-page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NTC — AZÜ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-page">
+
+  <!-- Sticky Brand (always visible on project pages) -->
+  <div class="sticky-brand is-visible">
+    <a href="index.html" class="brand-link"><h1 class="brand">AZÜ</h1></a>
+    <nav class="sticky-nav">
+      <a href="index.html#projects">Works</a>
+      <span class="nav-dot">&bull;</span>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+
+  <!-- Hero Video -->
+  <section class="project-hero">
+    <div class="parallax-text" aria-hidden="true">
+      <div class="parallax-text-track">
+        <span>NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span><span>NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;NTC&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <div class="project-hero-video project-hero-video--mobile">
+      <video autoplay muted loop playsinline>
+        <source src="vid/ntc_00.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.querySelector('.parallax-text-track');
+      window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        track.style.transform = 'translateX(' + (-scrollY * 0.5) + 'px)';
+      });
+    })();
+  </script>
+
+  <!-- Project Content -->
+  <div class="project-content">
+
+    <!-- Intro -->
+    <section class="project-intro">
+      <h1 class="project-title">Nike Training Club</h1>
+      <p class="body-large">Evolving the Global Fitness Experience for a Diverse Audience</p>
+      <h3 class="project-tags">App &nbsp;&bull;&nbsp; Fitness</h3>
+    </section>
+
+    <!-- Context -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Context</h3>
+        <p>Nike Training Club (NTC) is a personalised fitness coach providing a library of over 200 workouts. Originally launched as a women-only product with a targeted offering, Nike sought to evolve the app into a comprehensive fitness platform for a global, diverse audience.</p>
+      </div>
+    </section>
+
+    <!-- Core Challenge -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Core Challenge</h3>
+        <p>Our objective was to scale the app's features and content without losing the premium "Nike" feel. We needed to restructure the information architecture to support a wider variety of workout types, including the introduction of Yoga, while ensuring the interface remained intuitive and high-performing.</p>
+      </div>
+    </section>
+
+    <!-- Strategic Approach -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3>Strategic Approach</h3>
+        <p>We operated as an extension of Nike's internal design team through a highly collaborative model of daily syncs and monthly co-locations. My focus was on Visual Logic and Navigation Architecture, ensuring that the expanded content remained accessible and aligned with the broader Nike digital ecosystem.</p>
+      </div>
+    </section>
+
+    <div class="project-image">
+      <img src="img/ntc_01.png" alt="NTC strategic approach">
+    </div>
+
+    <!-- 1. Information Architecture and Discovery -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">1. Information Architecture and Discovery</h3>
+        <h3>Simplifying navigation for an expanded library</h3>
+        <p>With the library growing to over 200 workouts, the legacy browsing flow was no longer efficient. Users were struggling to find sessions that matched their specific time constraints or equipment availability.</p>
+        <p><strong>Solution:</strong> We restructured the IA into three core pillars: Strength, Endurance, and Mobility. I designed a refined filtering system that allowed users to sort by duration, intensity, and equipment requirements. This reduced cognitive load and ensured that users could move from the homepage to a started workout in seconds.</p>
+      </div>
+    </section>
+
+    <div class="project-image">
+      <img src="img/ntc_02.png" alt="NTC information architecture">
+    </div>
+
+    <!-- 2. Tailoring the Workout Experience -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">2. Tailoring the Workout Experience</h3>
+        <h3>Designing bespoke flows for Yoga and Mindfulness</h3>
+        <p>The existing workout template was built for gym-style intervals with frequent breaks. This "stop-start" interaction model was disruptive for the continuous, fluid nature of Yoga.</p>
+        <p><strong>Solution:</strong> Working closely with Yoga instructors, we re-engineered the workout interface. We removed friction points and established a "flow-state" UI that allowed for a smooth, uninterrupted session. This proved that a single app could successfully house diverse fitness disciplines through adaptable interaction patterns.</p>
+      </div>
+    </section>
+
+    <!-- 3. Systemic Alignment -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">3. Systemic Alignment</h3>
+        <h3>Ensuring cross-app coherence</h3>
+        <p>The NTC app needed to feel like a member of the same family as the Nike commerce app and Nike Run Club (NRC), despite having its own specific functional requirements.</p>
+        <p><strong>Solution:</strong> We established a rigorous alignment process with the global Nike design teams. By comparing visual treatments and sharing interaction principles, we ensured that the NTC UI remained consistent with the wider brand ecosystem while still pushing the boundaries of what a fitness-focused interface could achieve.</p>
+      </div>
+    </section>
+
+    <div class="project-image full-bleed">
+      <img src="img/ntc_03.jpg" alt="NTC systemic alignment">
+    </div>
+
+    <!-- 4. Platform Expansion: Apple TV -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">4. Platform Expansion: Apple TV</h3>
+        <h3>Adapting the mobile experience for the living room</h3>
+        <p>Following the success of the mobile release, we were tasked with adapting NTC for Apple TV (tvOS) to support the growing trend of home-based workouts.</p>
+        <p><strong>Solution:</strong> We re-evaluated the interface through the lens of ten-foot UI design. By testing navigation with a remote control rather than a touchscreen, we designed a simplified, high-contrast version of the app. This ensured the experience was legible and easy to navigate from across a room, maintaining the "High-Finish" feel on a much larger canvas.</p>
+      </div>
+    </section>
+
+    <div class="project-image full-bleed">
+      <video autoplay muted loop playsinline>
+        <source src="vid/ntc_04.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Impact -->
+    <section class="project-section">
+      <div class="project-block">
+        <h3 class="body-large">Impact</h3>
+        <p>The redesigned NTC app successfully transitioned into a global fitness leader and remains a benchmark in the health and fitness category.</p>
+        <p><strong>Market Reach:</strong> Surpassed 21 million downloads globally.</p>
+        <p><strong>User Sentiment:</strong> Achieved an App Store rating of 4.8 from over 51,000 reviews.</p>
+        <p><strong>Recognition:</strong> Awarded "Editor's Choice" on the Apple App Store.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <span>&copy; 2026 AZÜ — Marie Ansart</span>
+    <a href="index.html">&larr; Back to Home</a>
+  </footer>
+
+</body>
+</html>
