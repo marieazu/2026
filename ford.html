@@ -46,40 +46,31 @@
     <!-- Intro -->
     <section class="project-intro">
       <h1 class="project-title">Ford</h1>
-      <p class="body-large">Scaling a design system across Europe</p>
-      <h3 class="project-tags">Design System &nbsp;&bull;&nbsp; Automotive</h3>
+      <p class="body-large">Scaling a Design System Across Europe</p>
+      <h3 class="project-tags">Design Systems &nbsp;&bull;&nbsp; Automotive</h3>
     </section>
 
     <!-- Context -->
     <section class="project-section">
       <div class="project-block">
         <h3>Context</h3>
-        <p>Ford was rolling out a new art direction globally, with the US site setting the visual benchmark. The European platform needed to align with this direction while supporting multiple internal teams contributing in parallel. Over time, the existing design system had become fragmented, inconsistent, and difficult to maintain.</p>
+        <p>Ford was rolling out a new global art direction, with the US site setting the visual benchmark. The European platform needed to align with this direction while supporting multiple internal teams contributing in parallel. Over time, the existing design system had become fragmented and difficult to maintain.</p>
       </div>
     </section>
 
-    <!-- Core Problem & Constraints -->
+    <!-- Core Challenge -->
     <section class="project-section">
       <div class="project-block">
-        <h3>Core Problem</h3>
-        <p>How do we create a single, scalable design system that supports multiple teams, aligns with a global visual direction, and meets strict accessibility standards without slowing down delivery?</p>
-      </div>
-
-      <div class="project-block">
-        <h3>Constraints</h3>
-        <p>• Multiple teams contributing to the same system across markets<br>
-        • Existing components already implemented in production<br>
-        • High accessibility requirements (WCAG AA and above)<br>
-        • A system large enough that future changes risked being slow and error-prone</p>
+        <h3>Core Challenge</h3>
+        <p>Our objective was to create a single, scalable design system that supported multiple teams and aligned with the global visual direction. We had to ensure the system met strict accessibility standards without compromising the speed of delivery across diverse European markets.</p>
       </div>
     </section>
 
-    <!-- Approach -->
+    <!-- Strategic Approach -->
     <section class="project-section">
       <div class="project-block">
-        <h3>Approach</h3>
-        <p>The work focused on turning a fragmented set of design assets into a dependable system, establishing a single source of truth for consistency, accessibility, and long-term scalability.</p>
-        <p>This required auditing real usage in both design and code, working closely with engineering, and restructuring the system around tokens and variables instead of static styles.</p>
+        <h3>Strategic Approach</h3>
+        <p>The work focused on transforming a fragmented set of design assets into a dependable framework. We established a single source of truth for consistency and long-term scalability. This required auditing real-world usage in both design and code, working closely with engineering to restructure the system around tokens and variables rather than static styles.</p>
       </div>
     </section>
 
@@ -90,13 +81,10 @@
     <!-- 1. Establishing a Single Source of Truth -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">1. Establishing a single source of truth</h3>
-        <h3>Reducing redundancy and defining canonical components</h3>
-        <p>There were too many font sizes, components, and style variations in circulation. Designers were unsure which options were correct, and different teams were making different assumptions.</p>
-        <p><strong>Solution:</strong> We audited all existing design files and cross-referenced them with what was already live in production. Where multiple options existed, we prioritised:</p>
-        <p>• What was already implemented in code<br>
-        • What met accessibility standards most reliably</p>
-        <p>This allowed us to reduce redundancy and clearly define which components and styles were canonical.</p>
+        <h3 class="body-large">1. Establishing a Single Source of Truth</h3>
+        <h3>Reducing redundancy through systematic auditing</h3>
+        <p>With too many font sizes, components, and style variations in circulation, designers were frequently unsure which options were canonical, leading to inconsistent outputs across teams.</p>
+        <p><strong>Solution:</strong> We audited all existing design files and cross-referenced them with the live production environment. Where multiple variations existed, we prioritised those already implemented in code and those that met accessibility standards most reliably. This allowed us to strip away redundancy and clearly define a core set of components.</p>
       </div>
     </section>
 
@@ -104,14 +92,13 @@
       <img src="img/ford_02.jpg" alt="Ford design system components">
     </div>
 
-    <!-- 2. Designing for Scalability and Change -->
+    <!-- 2. Architecture for Scalability -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">2. Designing for scalability and change</h3>
-        <h3>Building a token-based system for global consistency</h3>
-        <p>Given the size of the system, even small updates risked being time-consuming and prone to human error.</p>
-        <p><strong>Solution:</strong> We rebuilt the system using Figma tokens and variables wherever possible. This allowed global changes to be made centrally and applied consistently across the system.</p>
-        <p>A clear naming convention was defined early, designed to scale as the system evolved. This was done in close collaboration with engineering to ensure alignment with existing and planned implementation patterns.</p>
+        <h3 class="body-large">2. Architecture for Scalability</h3>
+        <h3>Future-proofing the system through Figma variables</h3>
+        <p>Given the scale of the Ford ecosystem, even minor updates risked being time-consuming and prone to human error if handled manually.</p>
+        <p><strong>Solution:</strong> We rebuilt the system using Figma tokens and variables. This allowed for global changes to be made centrally and applied instantly across the entire library. We defined a clear naming convention in collaboration with engineering, ensuring that the design architecture aligned perfectly with technical implementation patterns.</p>
       </div>
     </section>
 
@@ -122,10 +109,10 @@
     <!-- 3. Accessibility as a System Constraint -->
     <section class="project-section">
       <div class="project-block">
-        <h3 class="body-large">3. Accessibility as a system constraint</h3>
-        <h3>Making accessibility decisions visible and repeatable</h3>
-        <p>The system included a wide colour palette, plus light and dark modes, creating a large number of colour combinations that needed to meet WCAG AA standards.</p>
-        <p><strong>Solution:</strong> We created a comprehensive colour reference that documented all approved combinations and explicitly excluded pairings that failed accessibility checks. This made accessibility decisions visible and repeatable, rather than something designers had to re-evaluate each time.</p>
+        <h3 class="body-large">3. Accessibility as a System Constraint</h3>
+        <h3>Encoding WCAG standards into the visual language</h3>
+        <p>The system required a wide colour palette plus light and dark modes, creating a vast number of potential colour combinations. Ensuring every pair met WCAG AA standards was a significant manual burden.</p>
+        <p><strong>Solution:</strong> We created a comprehensive colour reference that documented all approved combinations and explicitly excluded pairings that failed accessibility checks. By building these constraints directly into the system documentation, accessibility became a repeatable standard rather than an afterthought that designers had to re-evaluate for every new screen.</p>
       </div>
     </section>
 
@@ -133,8 +120,10 @@
     <section class="project-section">
       <div class="project-block">
         <h3 class="body-large">Impact</h3>
-        <p>The result was a unified design system that acted as a reliable foundation for Ford Europe's digital products. It reduced inconsistency across teams, lowered the risk of errors during iteration, and ensured accessibility was built into the system rather than retrofitted.</p>
-        <p>Most importantly, it enabled teams to move faster with more confidence, knowing they were designing within a clear, scalable framework.</p>
+        <p>The result was a unified design system that acted as a reliable foundation for Ford Europe's digital products. It established a level of design governance that reduced inconsistency and lowered the risk of errors during rapid iteration.</p>
+        <p><strong>Efficiency:</strong> Enabled teams to move faster with more confidence within a clear, scalable framework.</p>
+        <p><strong>Consistency:</strong> Created a 1:1 parity between design assets and production code.</p>
+        <p><strong>Inclusivity:</strong> Built accessibility into the core DNA of the system, ensuring compliance across all European touchpoints.</p>
       </div>
     </section>
 
